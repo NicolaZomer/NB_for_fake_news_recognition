@@ -239,7 +239,46 @@ body <- dashboardBody(
       tags$h1("Sample texts"),
       tags$hr(style="border-color: black;"),
       tags$p(
-        "We report here some examples of social media posts present in the dataset, which can be used to test the application and play with it."
+        "We report here some examples of social media posts present in the Kaggle", 
+        tags$i("test.csv"), 
+        "file, which can be used to test the application and play with it.",
+        box(width = NULL, solidHeader = TRUE, 
+          tags$table(
+            tags$tr( 
+              tags$th("Sample Text")
+            ), 
+            tags$tr(
+              tags$td("Obamacare has caused millions of full-time jobs to become part-time.")
+            ), 
+            tags$tr(
+              tags$td("You cant read a speech by George Washington . . . without hearing him reference God, the Almighty.")
+            ), 
+            tags$tr(
+              tags$td("Florida ranks last in the ratio of employees to residents...And Florida is dead last in the nation in state employee payroll expenditures per resident.")
+            ), 
+            tags$tr(
+              tags$td("The House of Delegates budget bill cuts $50 million from education.") 
+            ), 
+            tags$tr(
+              tags$td("At least Obama didn't marry his cousin, as Giuliani did.") 
+            ), 
+            tags$tr(
+              tags$td("Says his reform efforts improved performance at all 10 low-performing schools in Palm Beach, Florida.") 
+            ), 
+            tags$tr(
+              tags$td("As the usage [of synthetic marijuana] has dramatically increased, instances of violence, bodily harm and even death have risen with it.") 
+            ), 
+            tags$tr(
+              tags$td("Says David Dewhurst explicitly advocated a guest worker program for all illegal immigrants.") 
+            ), 
+            tags$tr(
+              tags$td("A new Colorado law literally allows residents to print ballots from their home computers, then encourages them to turn ballots over to collectors.") 
+            ), 
+            tags$tr(
+              tags$td("Says every school will be negatively impacted if Education Stability Fund is not tapped.") 
+            )
+          )
+        )
       ),
       
       tags$hr(), 
@@ -264,13 +303,15 @@ body <- dashboardBody(
               tags$a(href="https://en.didattica.unipd.it/off/2021/LM/SC/SC2443/000ZZ/SCP8082557/N0", "AS4PA"), 
               "."
             ),
-            tags$p(
-              "The source code for the training of the models and the evaluation of their accuracy is available on GitHub:"
-              ### AGGIUNGI QUA IL LINK
+            tags$p( 
+              "The source code for the training of the models and the evaluation of their accuracy is available on GitHub:", 
+              tags$a(href="https://github.com/NicolaZomer/NB_for_fake_news_recognition/blob/main/NB_fake_news.ipynb", "notebook"), 
+              "."
             ), 
-            tags$p(
-              "The source code for the Shiny app is also available on GitHub:"
-              ### AGGIUNGI QUA IL LINK
+            tags$p( 
+              "The source code for the Shiny app is also available on GitHub:",
+              tags$a(href="https://github.com/NicolaZomer/NB_for_fake_news_recognition/tree/main/app", "app"), 
+              "."
             )
           )
         ), 
