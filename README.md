@@ -18,6 +18,17 @@ Possible suggested lables for classifying the text are the following:
 
 The Kaggle dataset [2] consists of a training set wth 10,240 instances and a test set wth 1,267 instances.
 
+## Notebook 
+In the notebook [NB_fake_news.ipynb](https://github.com/NicolaZomer/NB_for_fake_news_recognition/blob/main/NB_fake_news.ipynb) we implement by scratch the NB algorithm, after applying a cleaning procedure to our dataset. We also implement the concept of feature selection, in particular using as utility measure the Mutual Information. The models are trained and tested using the Kaggle dataset [2], and for each of them the accuracy is computed. We also train the same model using the R function  `naiveBayes()` from the library `e1071` and compare the results.
+
+## App
+After training the models, using the R package [Shiny](https://shiny.rstudio.com/) we built an interactive web app, which, given as input a social media post:
+- Returns the score associated with each class as barplot
+- Classifies the input text
+
+The app is available at the following link: [app](https://nicolazomer.shinyapps.io/fake-news-recognition/).
+
+
 
 ## References
 [1] C. D. Manning, Chapter 13, Text Classification and Naive Bayes, in Introduction to Information Retrieval, Cambridge University Press, 2008.
