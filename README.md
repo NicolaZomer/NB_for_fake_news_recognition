@@ -33,4 +33,4 @@ The app is available at the following link: [app](https://nicolazomer.shinyapps.
 ## References
 [1] C. D. Manning, Chapter 13, Text Classification and Naive Bayes, in Introduction to Information Retrieval, Cambridge University Press, 2008.
 
-[2] Fake News Content Detection, KAGGLE data set: https://www.kaggle.com/datasets/ anmolkumar/fake-news-content-detection?select=train.csv
+[2] Fake News Content Detection, KAGGLE data set: https://www.kaggle.com/datasets/anmolkumar/fake-news-content-detection?select=train.csv
